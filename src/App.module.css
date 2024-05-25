@@ -1,0 +1,64 @@
+.App {
+  height: 10rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  background-color: #c5dadc;
+  border: none;
+  text-align: end;
+  font-size: 25px;
+  margin: 10px;
+}
+.container_items {
+  background-color: #c5dadc;
+  max-inline-size: 22rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 4px 0px rgba (0, 0, 0, 0.12);
+}
+.input {
+  font-size: 2rem;
+  text-align: end; /* This is the Logical Property for text-align: right; and has very good browser support. */
+  background: #c5dadc;
+  margin: 10px;
+  color: hsl(255, 100%, 100%); /* text color */
+  padding-block-start: 0.25rem; /* Logical Property for padding-top */
+  padding-block-end: 0.25rem; /* Logical Property for padding-bottom */
+  padding-inline-end: 0.75rem;
+}
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background: #c5dadc;
+}
+.button__numberMathButton {
+  background: #6e8995;
+}
+button__numberMathButton:active {
+  background: hsl(208, 24%, 80%);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+.button__number {
+  background-color: #96c4be;
+  border: none;
+  padding-block-start: 0.5rem; /* Logical Property for padding-top */
+  padding-block-end: 0.5rem; /* Logical Property for padding-bottom */
+  padding-inline-start: 1.25rem; /* Logical Property for padding-left */
+  padding-inline-end: 1.25rem; /* Logical Property for padding-right */
+  font-size: 1.5rem;
+}
+.button__number:active,
+.button__number:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+.button__numberEnterButton {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 4;
+  background: #fc9298;
+}
